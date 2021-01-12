@@ -53,6 +53,15 @@
   background: #39a2ae;
 }
 
+.puddle {
+  position: absolute;
+  top: 542px;
+  left: 15%;
+  width: 330px;
+  height: 3px;
+  border: 1px solid #39a2ae;
+  background-color: #39a2ae;
+}
 .ground {
   position: absolute;
   top: 545px;
