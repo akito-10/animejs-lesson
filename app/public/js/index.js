@@ -101,3 +101,56 @@ anime({
   ],
   duration: 100000,
 });
+
+document.querySelector(".cloud").addEventListener("click", () => {
+  const tl = anime.timeline({
+    duration: 200,
+  });
+
+  tl.add({
+    targets: ".cloud",
+    background: "#444",
+  })
+    .add({
+      targets: ".thunder",
+      rotate: "-20deg",
+      background: "#ffff66",
+      scaleY: 3,
+      duration: 50,
+    })
+    .add({
+      targets: ".thunder",
+      translateY: "50px",
+    })
+    .add({
+      targets: ".thunder",
+      rotate: "20deg",
+      duration: 50,
+    })
+    .add({
+      targets: ".thunder",
+      translateY: "80px",
+    })
+    .add({
+      targets: ".thunder",
+      rotate: "-10deg",
+      duration: 50,
+    })
+    .add({
+      targets: ".thunder",
+      translateY: "140px",
+    })
+    .add({
+      targets: ".thunder",
+      rotate: "10deg",
+      duration: 50,
+    })
+    .add({
+      targets: ".thunder",
+      translateY: "200px",
+    })
+    .add({
+      targets: ".cloud",
+      background: "#EEFFFF",
+    });
+});
